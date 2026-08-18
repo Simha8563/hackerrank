@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M. Sai Simha Reddy | Talent Acquisition Partner | HackerRank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --ind:#1BA94C;
+  --ind-deep:#158A3D;
+  --ind-light:#E8F7EC;
+  --black:#39424E;
+  --ink:#20262D;
+  --body:#3D454E;
+  --muted:#767E87;
+  --faint:#F0F0F0;
+  --border:#E4E4E4;
+  --white:#FFFFFF;
+  --card:#FAFAFA;
+}
+
+html{scroll-behavior:smooth;}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--white);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{max-width:680px;margin:0 auto;padding:0 20px 80px;}
+
+/* HERO */
+.hero{padding:48px 0 36px;border-bottom:1px solid var(--border);}
+
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'DM Mono',monospace;
+  font-size:11px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--ind-deep);
+  background:var(--ind-light);
+  padding:4px 12px;border-radius:20px;
+  margin-bottom:20px;
+}
+.hero-eyebrow span{width:6px;height:6px;border-radius:50%;background:var(--ind);display:inline-block;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+
+.hero h1{
+  font-family:'DM Sans',sans-serif;
+  font-size:clamp(26px,5vw,38px);
+  font-weight:700;line-height:1.15;color:var(--black);
+  margin-bottom:14px;letter-spacing:-0.5px;
+}
+.hero h1 em{font-style:normal;color:var(--ind-deep);}
+
+.hero-sub{font-size:14px;color:var(--muted);margin-bottom:20px;}
+.hero-sub a{color:var(--ind-deep);text-decoration:none;border-bottom:1px solid var(--ind-light);}
+
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.htag{font-size:12px;padding:4px 12px;border-radius:6px;border:1px solid var(--border);color:var(--body);background:var(--card);}
+
+/* SECTIONS */
+.sec{margin-top:48px;}
+.sec-label{
+  font-family:'DM Mono',monospace;
+  font-size:10px;letter-spacing:0.13em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:16px;
+}
+
+/* SIGNAL BAR */
+.signal-bar{
+  border-left:3px solid var(--ind);
+  background:var(--ind-light);
+  border-radius:0 8px 8px 0;
+  padding:16px 18px;margin-bottom:12px;
+}
+.signal-label{
+  font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--ind-deep);margin-bottom:6px;
+}
+.signal-bar p{font-size:13px;color:var(--ink);line-height:1.6;}
+.signal-bar strong{color:var(--black);font-weight:500;}
+
+/* SNAPSHOT GRID */
+.snap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;}
+.snap-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+.snap-micro{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px;}
+.snap-big{font-family:'DM Sans',sans-serif;font-size:32px;font-weight:700;color:var(--ind-deep);line-height:1;margin-bottom:4px;}
+.snap-desc{font-size:12px;color:var(--muted);line-height:1.45;}
+
+/* MARKET / VANTAGE CARDS */
+.market-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:10px;}
+.market-card-title{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--black);margin-bottom:8px;}
+.market-card p{font-size:13px;color:var(--body);line-height:1.65;}
+.market-card p strong{color:var(--black);font-weight:500;}
+.comp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.comp-tag{font-size:11px;padding:3px 10px;border-radius:4px;background:var(--white);color:var(--body);border:1px solid var(--border);}
+.comp-tag.us{background:var(--ind-deep);color:var(--white);border-color:var(--ind-deep);}
+
+/* NICHE STEPS */
+.niche-step{display:flex;gap:16px;margin-bottom:22px;}
+.niche-num{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;
+  background:var(--ind-deep);color:var(--white);
+  font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.niche-content{flex:1;}
+.niche-title{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--black);margin-bottom:6px;}
+.niche-body{font-size:13px;color:var(--body);line-height:1.65;margin-bottom:10px;}
+.ntags{display:flex;flex-wrap:wrap;gap:6px;}
+.ntag{font-size:11px;padding:3px 10px;border-radius:4px;background:var(--card);color:var(--body);border:1px solid var(--border);}
+
+/* AI STACK / PRODUCT CARD */
+.ai-grid{display:flex;flex-direction:column;gap:10px;}
+.ai-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;}
+.ai-card-title{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--black);margin-bottom:6px;}
+.ai-card-body{font-size:13px;color:var(--body);line-height:1.6;margin-bottom:10px;}
+.ai-tools{display:flex;flex-wrap:wrap;gap:6px;}
+.ai-tool{font-size:11px;padding:3px 10px;border-radius:4px;background:var(--white);color:var(--body);border:1px solid var(--border);}
+
+/* FEATURED PRODUCT (AI Talent Intelligence) */
+.product-card{
+  border:1px solid var(--ind-deep);
+  border-radius:12px;
+  padding:22px 22px 20px;
+  background:linear-gradient(180deg,var(--ind-light) 0%,var(--white) 60%);
+}
+.product-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
+.product-name{font-family:'DM Sans',sans-serif;font-size:16px;font-weight:700;color:var(--black);}
+.product-link{
+  font-family:'DM Mono',monospace;font-size:11px;
+  color:var(--white);background:var(--ind-deep);
+  padding:5px 12px;border-radius:6px;text-decoration:none;
+  white-space:nowrap;
+}
+.product-desc{font-size:13px;color:var(--body);line-height:1.65;margin-bottom:14px;}
+.product-feature-grid{display:flex;flex-direction:column;gap:10px;}
+.product-feature{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:12px 14px;}
+.product-feature-title{font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;color:var(--ind-deep);margin-bottom:4px;}
+.product-feature-body{font-size:12.5px;color:var(--body);line-height:1.55;}
+.product-stack{margin-top:14px;font-size:11.5px;color:var(--muted);}
+.product-stack strong{color:var(--body);font-weight:500;}
+
+/* PROOF GRID */
+.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.proof-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 10px;text-align:center;}
+.proof-num{font-family:'DM Sans',sans-serif;font-size:22px;font-weight:700;color:var(--ind-deep);margin-bottom:4px;}
+.proof-desc{font-size:11px;color:var(--muted);line-height:1.4;}
+
+/* GAP / HONEST SECTION */
+.gap-block{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px 20px;}
+.gap-block p{font-size:13px;color:var(--body);line-height:1.7;margin-bottom:10px;}
+.gap-block p:last-child{margin-bottom:0;}
+.gap-block strong{color:var(--black);font-weight:500;}
+
+/* CLOSE */
+.close-block p{font-size:13px;color:var(--body);line-height:1.7;margin-bottom:12px;}
+.close-block strong{color:var(--black);font-weight:500;}
+
+/* CTA */
+.cta{
+  margin-top:44px;
+  background:var(--ind-deep);
+  border-radius:14px;
+  padding:26px 24px;
+  text-align:center;
+}
+.cta-title{font-family:'DM Sans',sans-serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.cta-sub{font-size:13px;color:#D7DAF7;margin-bottom:18px;line-height:1.55;}
+.cta-btn{
+  display:inline-block;
+  background:var(--white);color:var(--ind-deep);
+  font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;
+  padding:12px 28px;border-radius:8px;text-decoration:none;
+}
+
+/* FOOTER */
+.footer{margin-top:40px;padding-top:24px;border-top:1px solid var(--border);text-align:center;}
+.footer-name{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;color:var(--black);margin-bottom:6px;}
+.footer-links{font-size:12px;color:var(--muted);}
+.footer-links a{color:var(--ind-deep);text-decoration:none;}
+
+@media (max-width:420px){
+  .snap-grid{grid-template-columns:1fr 1fr;}
+  .proof-grid{grid-template-columns:repeat(2,1fr);}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-eyebrow"><span></span>Prepared for HackerRank · Talent Acquisition Partner</div>
+    <h1>A builder for HackerRank's <em>next chapter</em> of hiring, not another recruiter in the queue.</h1>
+    <div class="hero-sub">M. Sai Simha Reddy · Talent Acquisition · Bangalore-ready · <a href="https://linkedin.com/in/m-sai-simha-reddy" target="_blank">linkedin.com/in/m-sai-simha-reddy</a></div>
+    <div class="hero-tags">
+      <span class="htag">Full-cycle TA, 6+ yrs</span>
+      <span class="htag">AI-native sourcing</span>
+      <span class="htag">Technical hiring</span>
+      <span class="htag">Zero-playbook builder</span>
+    </div>
+  </div>
+
+  <!-- WHY THIS ROLE -->
+  <div class="sec">
+    <div class="sec-label">Why this role, specifically</div>
+    <div class="signal-bar">
+      <div class="signal-label">The JD said it directly</div>
+      <p>"Operates less like a traditional recruiter and more like a builder." <strong>That is the exact pattern of my last six years</strong> — not a line I am reverse-engineering to fit the posting.</p>
+    </div>
+    <div class="snap-grid">
+      <div class="snap-card">
+        <div class="snap-micro">Built from zero</div>
+        <div class="snap-big">4</div>
+        <div class="snap-desc">Custom GPTs designed and shipped to production, no existing playbook</div>
+      </div>
+      <div class="snap-card">
+        <div class="snap-micro">Effort reduced</div>
+        <div class="snap-big">90%</div>
+        <div class="snap-desc">Manual screening effort cut through AI-driven workflows, not headcount</div>
+      </div>
+      <div class="snap-card">
+        <div class="snap-micro">Offer conversion</div>
+        <div class="snap-big">90%+</div>
+        <div class="snap-desc">Offer-to-join sustained across every mandate I have owned</div>
+      </div>
+      <div class="snap-card">
+        <div class="snap-micro">Load managed</div>
+        <div class="snap-big">100+</div>
+        <div class="snap-desc">Concurrent requisitions across 4 hiring verticals simultaneously</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUYER'S SIDE VANTAGE -->
+  <div class="sec">
+    <div class="sec-label">The angle most candidates cannot bring</div>
+    <div class="market-card">
+      <div class="market-card-title">I have sat on the buyer's side of HackerRank</div>
+      <p>Before this application, I ran a structured evaluation of assessment platforms as a TA practitioner choosing infrastructure for real hiring pipelines — <strong>HackerRank against iMocha, Codility, CodeSignal, HackerEarth, Mettl, and a dozen others</strong>, on traffic, funding stage, and named enterprise customers. I know what a TA buyer actually weighs when choosing a platform like this, and what makes them stay or churn. Most internal candidates apply having only used your product. I have benchmarked it against its category.</p>
+      <div class="comp-tags">
+        <span class="comp-tag us">HackerRank</span>
+        <span class="comp-tag">iMocha</span>
+        <span class="comp-tag">Codility</span>
+        <span class="comp-tag">CodeSignal</span>
+        <span class="comp-tag">HackerEarth</span>
+        <span class="comp-tag">Mercer Mettl</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEATURED PRODUCT: AI TALENT INTELLIGENCE -->
+  <div class="sec">
+    <div class="sec-label">Something I built, not just something I claim</div>
+    <div class="product-card">
+      <div class="product-top">
+        <div class="product-name">AI Talent Intelligence</div>
+        <a class="product-link" href="https://saisimha-ai-talent-intelligence.ai.studio" target="_blank">View live app →</a>
+      </div>
+      <div class="product-desc">An AI-powered talent sourcing and recruiting strategy platform I designed and built — takes a raw job description and converts it into a calibrated hiring strategy, sourcing blueprint, and candidate evaluation system. This is the "AI in my day-to-day workflow" the JD asks for, made concrete.</div>
+      <div class="product-feature-grid">
+        <div class="product-feature">
+          <div class="product-feature-title">Intake calibration, not guesswork</div>
+          <div class="product-feature-body">Parses a JD for title, seniority, comp, work model, and competencies; flags blocking ambiguities (unspecified CTC, unconfirmed headcount); tags every requirement as JD-stated, recruiter-confirmed, inferred, or market benchmark.</div>
+        </div>
+        <div class="product-feature">
+          <div class="product-feature-title">Multi-channel sourcing blueprint</div>
+          <div class="product-feature-body">Maps primary, adjacent, and avoid talent pools across competitors, GCCs, and scale-ups; generates platform-specific Boolean strings for LinkedIn Recruiter, Naukri Resdex, and Google X-Ray; drafts multi-stage outreach sequences.</div>
+        </div>
+        <div class="product-feature">
+          <div class="product-feature-title">Screening and evaluation scorecards</div>
+          <div class="product-feature-body">Evaluates resumes against verified must-haves, flags risk (notice period, experience mismatch), assigns readiness ratings, and produces a structured debrief framework with rating scales and tie-breaker protocols.</div>
+        </div>
+      </div>
+      <div class="product-stack"><strong>Architecture:</strong> multi-model cascade (Gemini 2.5, Groq, Mistral) with deterministic fallback for zero-downtime operation under upstream API limits.</div>
+    </div>
+  </div>
+
+  <!-- NICHE HIRING PATTERN -->
+  <div class="sec">
+    <div class="sec-label">How I run ambiguous, no-playbook mandates</div>
+    <div class="niche-step">
+      <div class="niche-num">1</div>
+      <div class="niche-content">
+        <div class="niche-title">Take the mandate with no existing process</div>
+        <div class="niche-body">Cracked Instructor hiring in a thin MTech/PhD pool with zero prior playbook and no team precedent to lean on. Not an inherited process — built from scratch under a real deadline.</div>
+        <div class="ntags"><span class="ntag">DSA-based screening framework</span><span class="ntag">Zero agency dependency</span></div>
+      </div>
+    </div>
+    <div class="niche-step">
+      <div class="niche-num">2</div>
+      <div class="niche-content">
+        <div class="niche-title">Build the technical bar before sourcing starts</div>
+        <div class="niche-body">Owned IIT/NIT/IIIT technical campus hiring end-to-end across 15 campuses; co-evaluated candidates on-ground with hiring managers rather than relying on a resume filter, closing SDE1/SDE2 offers inside Week 1 to 2 of season.</div>
+        <div class="ntags"><span class="ntag">15 IIT/NIT/IIIT campuses</span><span class="ntag">HM co-evaluation</span></div>
+      </div>
+    </div>
+    <div class="niche-step">
+      <div class="niche-num">3</div>
+      <div class="niche-content">
+        <div class="niche-title">Automate the repeatable, protect the judgment calls</div>
+        <div class="niche-body">4 Custom GPTs in production handle screening, CRM operations, and call feedback analysis, freeing time for the calibration conversations and candidate evaluation that actually need a human.</div>
+        <div class="ntags"><span class="ntag">N8N + Custom GPTs</span><span class="ntag">HubSpot CRM automation</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROOF -->
+  <div class="sec">
+    <div class="sec-label">Numbers that are real</div>
+    <div class="proof-grid">
+      <div class="proof-card"><div class="proof-num">300+</div><div class="proof-desc">Hires across technical, product, and niche roles</div></div>
+      <div class="proof-card"><div class="proof-num">90%+</div><div class="proof-desc">Offer-to-join sustained across mandates</div></div>
+      <div class="proof-card"><div class="proof-num">4</div><div class="proof-desc">Custom GPTs shipped to production</div></div>
+      <div class="proof-card"><div class="proof-num">15</div><div class="proof-desc">IIT / NIT / IIIT campuses engaged</div></div>
+      <div class="proof-card"><div class="proof-num">100+</div><div class="proof-desc">Concurrent reqs managed at peak</div></div>
+      <div class="proof-card"><div class="proof-num">6 yrs</div><div class="proof-desc">Building TA function, not inheriting one</div></div>
+    </div>
+  </div>
+
+  <!-- HONEST GAP, REFRAMED -->
+  <div class="sec">
+    <div class="sec-label">What I would ask HackerRank on day one</div>
+    <div class="gap-block">
+      <p>The JD is specific about fluency in RLHF, SFT, and foundation model work, and on the GTM side, knowing whether a role calls for a PLG-motion seller, an enterprise AE, or a RevOps operator. <strong>I want to be direct rather than vague about this:</strong> my technical hiring depth is strongest in SDE1/SDE2, product, and instructor-level roles today. The AI-native model layer and GTM segmentation vocabulary are the two areas I would want to get calibrated on fastest, in the intake conversation itself.</p>
+      <p>I do not think that is a reason to pass. I think it is exactly the kind of gap that closes fast for someone who already builds their own AI tooling and has run structured market-briefing conversations with hiring managers as a core operating habit, not a one-off. The fastest way to find out is a screening call, not a resume.</p>
+    </div>
+  </div>
+
+  <!-- CLOSE -->
+  <div class="sec">
+    <div class="sec-label">One thing worth saying directly</div>
+    <div class="close-block">
+      <p>I joined NxtWave in August 2020 as one of its earliest hires and built the TA function from nothing over six years — no team, no process, no playbook. That is the exact shape of what this role is asking for: someone who proposes the plan, executes it, and does not wait for a perfect brief to start.</p>
+      <p><strong>The AI Talent Intelligence app above is not a slide, it is running software.</strong> It is the clearest proof I have that I use AI in my sourcing and screening workflow today, not as a plan for someday.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="cta-title">15 minutes settles this faster than any document</div>
+    <div class="cta-sub">Happy to walk through the sourcing blueprint live, or talk through where I would close the AI-model and GTM vocabulary gap in week one.</div>
+    <a class="cta-btn" href="mailto:simhareddy8563@gmail.com?subject=HackerRank%20TA%20Partner%20-%20Screening%20Call">Get in touch →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-name">M. Sai Simha Reddy</div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/m-sai-simha-reddy" target="_blank">linkedin.com/in/m-sai-simha-reddy</a>
+      &nbsp;·&nbsp; simhareddy8563@gmail.com &nbsp;·&nbsp; +91-9164475747
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
